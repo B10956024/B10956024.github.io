@@ -24,11 +24,12 @@
 				margin: auto;
 			}
 			.jumbotron{
+                font-size: x-large;
 				padding-top: 2rem;
 				padding-bottom: 2rem;
 				color: rgba(255, 255, 255, 0.8);
 				text-align: center;
-				background-image: url('https://mis.npust.edu.tw/wp-content/uploads/2013/01/v.jpg');
+				background-image: url('https://www.marketersgo.com/wp-content/uploads/2019/12/pan-xiaozhen-wXG5XF73o3w-unsplash-1024x536.jpg');
 				background-position: center;
 				background-size: cover;
 			}
@@ -48,6 +49,134 @@
 			.card{
 				margin: auto;
 			}
+            #menu {
+    width: 100%;
+    margin: 0;
+    padding: 0px 0 0 0;
+    list-style: none;
+    background-color:  rgb(248,249,251);
+    background-image:  rgb(248,249,251);
+
+   
+}
+
+#menu li {
+    float: left;
+    padding: 0 0 10px 0;
+    position: relative;
+}
+
+#menu a {
+    float: left;
+    height: 25px;
+    padding: 0 25px;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    font: bold 12px/25px Arial, Helvetica;
+    text-decoration: none;
+
+}
+
+#menu li:hover > a {
+    color: #000000;
+}
+
+*html #menu li a:hover { /* IE6 */
+    color: #000000;
+}
+
+#menu li:hover > ul {
+    display: block;
+}
+
+/* Sub-menu */
+#menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    z-index: 99999;
+    background-color: rgb(231, 236, 245);
+    background-image: rgb(248,249,251);
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+#menu ul li {
+    float: none;
+    margin: 0;
+    padding: 0;
+    display:rgba(255, 255, 255, 0.8);
+    box-shadow: 0 1px 0 rgb(248,249,251),
+                0 2px 0 rgb(248,249,251);
+}
+
+#menu ul li:last-child {
+    box-shadow: none;
+}
+
+#menu ul a {
+    padding: 10px;
+    height: auto;
+    line-height: 1;
+    display: rgb(248,249,251);
+    white-space: nowrap;
+    float: none;
+    text-transform: none;
+}
+
+*html #menu ul a { /* IE6 */
+    height: 10px;
+    width: 150px;
+}
+
+*:first-child+html #menu ul a { /* IE7 */
+    height: 10px;
+    width: 150px;
+}
+
+#menu ul a:hover {
+    background-color: #77ccf3;
+    background-image: linear-gradient( #436da7, #0186ba);
+}
+
+#menu ul li:first-child a {
+    border-radius: 5px 5px 0 0;
+}
+
+#menu ul li:first-child a:after {
+    content: '';
+    position: absolute;
+    left: 30px;
+    top: -8px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+  
+}
+
+#menu ul li:first-child a:hover:after {
+    border-bottom-color: #04acec;
+}
+
+#menu ul li:last-child a {
+    border-radius: 0 0 5px 5px;
+}
+
+/* Clear floated elements */
+#menu:after {
+    visibility: hidden;
+    display:rgba(255, 255, 255, 0.8);
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
 		</style>
 	</head>
 	<body>
@@ -58,13 +187,14 @@
 			  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			  </button>
+
 			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+				<ul id="menu" class="navbar-nav me-auto mb-2 mb-lg-0">
 				  <li class="nav-item">
 					<a class="nav-link active" aria-current="page" href="#">首頁</a>
 				  </li>
 				  <li class="nav-item">
-					<a class="nav-link" href="#">關於</a>
+					<a class="nav-link" href="https://zh.wikipedia.org/wiki/%E5%8D%8E%E7%89%B9%E8%BF%AA%E5%A3%AB%E5%B0%BC%E5%85%AC%E5%8F%B8" target="_blank">關於</a>
 				  </li>
 				  <li class="nav-item">
 					<a class="nav-link" href="#">人物</a>
@@ -73,18 +203,17 @@
 					<a class="nav-link" href="#">電影</a>
 				  </li>
 				  <li class="nav-item">
-					<a class="nav-link" href="#"></a>
+					<a class="nav-link" href="#">活動</a>
 				  </li>
-				  <li class="nav-item">
-					<a class="nav-link" href="#">關於</a>
+				  <li class="dropdown">
+                      <a class="dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">關注我們</a>
+                      <ul>
+                        <li><a href="https://zh-tw.facebook.com/Disney" target="_blank">Facebook</a></li>
+                        <li><a href="https://www.instagram.com/disney/" target="_blank">Instagram</a></li>
+                        <li><a href="https://www.youtube.com/channel/UCl3MRIpEjC4v2wWdsk2Mabw" target="_blank">YouTube</a></li>
+                    </ul>
 				  </li>
-				  <li class="nav-item">
-					<a class="nav-link" href="#">活動下載</a>
-				  </li>
-				  <li class="nav-item">
-					<a class="nav-link" href="#">關注我們</a>
-				  </li>
-				</ul>
+				
 				<form class="d-flex">
 				  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
 				  <button class="btn btn-outline-success" type="submit">Search</button>
@@ -95,10 +224,10 @@
 
 		<!-- Jumbotron區塊 --->
 		<div class="jumbotron">
-			<h1 class="display-4">酷</h1>
+			<h1 class="display-4"></h1>
 			<hr>
-			<p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-			<a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+			<p>全世界都在催促你長大只有迪士尼在守護我們的童年</p>
+			<!--<a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>--->
 		  </div>
 
 		<!-- Card區塊 --->
@@ -106,34 +235,33 @@
 			<div class="row">
 				<div class="col-12 col-sm-6 col-md-3">
 				<div class="card">
-					<img src="#" class="card-img-top" alt="...">
+					<img src="http://www1.pu.edu.tw/~s1021894/10.jpg" class="card-img-top" alt="米奇">
 					<div class="card-body">
-				  <p class="card-text">YYY</p>
+				  <p class="card-text">米奇</p>
 					</div>
 				</div>
 			</div>
 			<div class="col-12 col-sm-6 col-md-3">
 				<div class="card">
-					<img src="#" class="card-img-top" alt="...">
+					<img src="http://img.yao51.com/jiankangtuku/fjbgofppiz.jpeg" class="card-img-top" alt="米妮">
 					<div class="card-body">
-				  <p class="card-text">WWWW</p>
+				  <p class="card-text">米妮</p>
 					</div>
 				</div>
 			</div>
 			<div class="col-12 col-sm-6 col-md-3">
 				<div class="card">
-					<img src="#" class="card-img-top" alt="...">
+					<img src="https://lh3.googleusercontent.com/proxy/sVw_tsjc8rve7-WEoA-ViLDec0e7wTKAa-vX4zGxGgh_iTsH-VkceNUHHiwJzPP3DpEivEz7R-xd8KvgGLULU5G9pT8YDq_JyTHlC8USx7mC" class="card-img-top" alt="布魯托">
 					<div class="card-body">
-				  <p class="card-text">QQQ</p>
+				  <p class="card-text">布魯托</p>
 					</div>
 				</div>
 			</div>
 			<div class="col-12 col-sm-6 col-md-3">
 				<div class="card">
-					<img src="#
-					" class="card-img-top" alt="...">
+					<img src="https://truth.bahamut.com.tw/s01/201809/d5f4af0d3a976cd5f2708b130854a7c4.JPG" class="card-img-top" alt="高飛">
 					<div class="card-body">
-				  <p class="card-text">CCCC</p>
+				  <p class="card-text">高飛</p>
 					</div>
 				</div>
 			</div>
