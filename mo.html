@@ -87,6 +87,19 @@
 		box-shadow: 0 1px 3px rgba(0, 0, 0, .5);  
 		vertical-align: middle;  
 	}
+	.post img {
+		transition: all 0.5s ease 0s;
+	}
+
+/*判斷滑鼠的動作放大圖片還有增加透明度*/
+	.post img:hover {
+		-moz-transform: scale(1.05);
+		-ms-transform: scale(1.05);
+		-o-transform: scale(1.05);
+		-webkit-transform: scale(1.05);
+		transform: scale(1.05);
+		opacity: .5;
+	}
 			
    #menu {
     	width: 100%;
@@ -271,11 +284,11 @@
 		 
 		<!-- Card區塊 --->
 		
-		<div class="teacher container">
+		<div class="teacher container post">
 			<div class="row">
 				<div class="col-12 col-sm-6 col-md-3">
 					<div class="card">
-						<img src="https://upload.wikimedia.org/wikipedia/zh/a/ae/Monsters_university.jpg" class="card-img-top" alt="怪獸大學"  width="100px" height="250px">
+						<a href="https://zh.wikipedia.org/wiki/%E6%80%AA%E7%8D%B8%E5%A4%A7%E5%AD%B8" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/zh/a/ae/Monsters_university.jpg" class="card-img-top" alt="怪獸大學"  width="100px" height="250px"></a>
 						<div class="card-body">
 					  <p class="card-text">怪獸大學</p>
 					  <p class="card-text">Monsters, Inc.</p>
@@ -284,7 +297,7 @@
 				</div>
 				<div class="col-12 col-sm-6 col-md-3">
 					<div class="card">
-						<img src="https://upload.wikimedia.org/wikipedia/zh/0/05/Frozen_%282013_film%29_poster.jpg" class="card-img-top" alt="冰雪奇緣"  width="100px" height="250px">
+						<a href="https://zh.wikipedia.org/wiki/%E5%86%B0%E9%9B%AA%E5%A5%87%E7%BC%98" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/zh/0/05/Frozen_%282013_film%29_poster.jpg" class="card-img-top" alt="冰雪奇緣"  width="100px" height="250px"></a>
 						<div class="card-body">
 					  <p class="card-text">冰雪奇緣</p>
 					  <p class="card-text">Frozen</p>
@@ -293,16 +306,16 @@
 				</div>
 				<div class="col-12 col-sm-6 col-md-3">
 					<div class="card">
-						<img src="https://upload.wikimedia.org/wikipedia/zh/0/0a/Inside_Out_%282015_film%29_poster.jpg" class="card-img-top" alt="腦筋急轉彎" width="100px" height="250px">
+						<a href="https://zh.wikipedia.org/wiki/%E8%85%A6%E7%AD%8B%E6%80%A5%E8%BD%89%E5%BD%8E_(%E9%9B%BB%E5%BD%B1)" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/zh/0/0a/Inside_Out_%282015_film%29_poster.jpg" class="card-img-top" alt="腦筋急轉彎" width="100px" height="250px"></a>
 						<div class="card-body">
 					  <p class="card-text">腦筋急轉彎</p>
 					  <p class="card-text">Inside Out</p>
 						</div>
 					</div>
-				</div>
+				</div> 
 				<div class="col-12 col-sm-6 col-md-3">
 					<div class="card">
-						<img src="https://upload.wikimedia.org/wikipedia/zh/3/38/The_Jungle_Book_2016_Poster.jpg" class="card-img-top" alt="與森林共舞"  width="100px" height="250px">
+						<a href="https://zh.wikipedia.org/wiki/%E8%88%87%E6%A3%AE%E6%9E%97%E5%85%B1%E8%88%9E" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/zh/3/38/The_Jungle_Book_2016_Poster.jpg" class="card-img-top" alt="與森林共舞"  width="100px" height="250px"></a>
 						<div class="card-body">
 					  <p class="card-text">與森林共舞</p>
 					  <p class="card-text">The Jungle Book</p>
@@ -312,7 +325,7 @@
 			   
 			<div class="col-12 col-sm-6 col-md-3">
 				<div class="card">
-					<img src="https://upload.wikimedia.org/wikipedia/zh/d/d6/Zootopia-poster1-600x889.jpg" class="card-img-top" alt="動物方程式" width="100px" height="250px">
+					<a href="https://zh.wikipedia.org/wiki/%E5%8B%95%E7%89%A9%E6%96%B9%E5%9F%8E%E5%B8%82" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/zh/d/d6/Zootopia-poster1-600x889.jpg" class="card-img-top" alt="動物方程式" width="100px" height="250px"></a>
 					<div class="card-body">
 				  <p class="card-text">動物方程式</p>
 				  <p class="card-text">Zootopia</p>
@@ -321,7 +334,7 @@
 			</div>
 			<div class="col-12 col-sm-6 col-md-3">
 				<div class="card">
-					<img src="https://upload.wikimedia.org/wikipedia/zh/0/0e/Pete%27s_Dragon_2016_Poster.jpg" class="card-img-top" alt="尋龍傳說"  width="100px" height="250px">
+					<a href="https://zh.wikipedia.org/wiki/%E5%B0%8B%E9%BE%8D%E5%82%B3%E8%AA%AA" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/zh/0/0e/Pete%27s_Dragon_2016_Poster.jpg" class="card-img-top" alt="尋龍傳說"  width="100px" height="250px"></a>
 					<div class="card-body">
 				  <p class="card-text">尋龍傳說</p>
 				  <p class="card-text">Pete's Dragon</p>
@@ -330,7 +343,7 @@
 			</div>
             <div class="col-12 col-sm-6 col-md-3">
 				<div class="card">
-					<img src="https://upload.wikimedia.org/wikipedia/zh/6/6b/Beauty_and_the_Beast_2017_Poster.jpg" class="card-img-top" alt="美女與野獸" width="100px" height="250px">
+					<a href="https://zh.wikipedia.org/wiki/%E7%BE%8E%E5%A5%B3%E8%88%87%E9%87%8E%E7%8D%B8_(2017%E5%B9%B4%E9%9B%BB%E5%BD%B1)" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/zh/6/6b/Beauty_and_the_Beast_2017_Poster.jpg" class="card-img-top" alt="美女與野獸" width="100px" height="250px"></a>
 					<div class="card-body">
 				  <p class="card-text">美女與野獸</p>
 				  <p class="card-text">Beauty and the Beast</p>
@@ -340,7 +353,7 @@
             
 			<div class="col-12 col-sm-6 col-md-3">
 				<div class="card">
-					<img src="https://upload.wikimedia.org/wikipedia/zh/a/a3/Coco_2017.jpg" class="card-img-top" alt="可可夜總會"  width="100px" height="250px">
+					<a href="https://zh.wikipedia.org/wiki/%E5%AF%BB%E6%A2%A6%E7%8E%AF%E6%B8%B8%E8%AE%B0" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/zh/a/a3/Coco_2017.jpg" class="card-img-top" alt="可可夜總會"  width="100px" height="250px"></a>
 					<div class="card-body">
 				  <p class="card-text">可可夜總會</p>
 				  <p class="card-text">Coco</p>
@@ -349,7 +362,7 @@
 			</div>
 			<div class="col-12 col-sm-6 col-md-3">
 				<div class="card">
-					<img src="https://upload.wikimedia.org/wikipedia/zh/d/df/Christopher_Robin_%28film%29.jpg" class="card-img-top" alt="摯友維尼"  width="100px" height="250px">
+					<a href="https://zh.wikipedia.org/wiki/%E6%91%AF%E5%8F%8B%E7%B6%AD%E5%B0%BC" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/zh/d/df/Christopher_Robin_%28film%29.jpg" class="card-img-top" alt="摯友維尼"  width="100px" height="250px"></a>
 					<div class="card-body">
 				  <p class="card-text">摯友維尼</p>
 				  <p class="card-text">Christopher Robin</p>
@@ -358,7 +371,7 @@
 			</div>
 			<div class="col-12 col-sm-6 col-md-3">
 				<div class="card">
-					<img src="https://upload.wikimedia.org/wikipedia/zh/4/4f/Frozen_2_poster.jpg" class="card-img-top" alt="冰雪奇緣2"  width="100px" height="250px">
+					<a href="https://zh.wikipedia.org/wiki/%E5%86%B0%E9%9B%AA%E5%A5%87%E7%B7%A32" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/zh/4/4f/Frozen_2_poster.jpg" class="card-img-top" alt="冰雪奇緣2"  width="100px" height="250px"></a>
 					<div class="card-body">
 				  <p class="card-text">冰雪奇緣2</p>
 				  <p class="card-text">Frozen II</p>
@@ -367,7 +380,7 @@
 			</div>
 			<div class="col-12 col-sm-6 col-md-3">
 				<div class="card">
-					<img src="https://upload.wikimedia.org/wikipedia/zh/b/bf/Soul_2020_poster.jpg" class="card-img-top" alt="靈魂急轉彎" width="100px" height="250px">
+					<a href="https://zh.wikipedia.org/wiki/%E9%9D%88%E9%AD%82%E5%A5%87%E9%81%87%E8%A8%98" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/zh/b/bf/Soul_2020_poster.jpg" class="card-img-top" alt="靈魂急轉彎" width="100px" height="250px"></a>
 					<div class="card-body">
 				  <p class="card-text">靈魂急轉彎</p>
 				  <p class="card-text">	Soul</p>
@@ -376,7 +389,7 @@
 			</div>
             <div class="col-12 col-sm-6 col-md-3">
 				<div class="card">
-					<img src="https://upload.wikimedia.org/wikipedia/zh/a/ae/Raya_and_the_Last_Dragon_poster.jpg" class="card-img-top" alt="尋龍使者：拉雅" width="100px" height="250px">
+					<a href="https://zh.wikipedia.org/wiki/%E5%B0%8B%E9%BE%8D%E4%BD%BF%E8%80%85%EF%BC%9A%E6%8B%89%E9%9B%85" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/zh/a/ae/Raya_and_the_Last_Dragon_poster.jpg" class="card-img-top" alt="尋龍使者：拉雅" width="100px" height="250px"></a>
 					<div class="card-body">
 				  <p class="card-text">尋龍使者：拉雅</p>
 				  <p class="card-text">	Raya and the Last Dragon</p>
